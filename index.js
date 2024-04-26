@@ -1,8 +1,10 @@
 require('dotenv').config()
 const express = require('express')
+const EJS = require('ejs')
+const jsonwebtoken = require('jsonwebtoken')
 const path = require('path')
 const app = express()
-const PORT = 8000
+const PORT = 80
 const mongo_url = 'mongodb+srv://samyak:KBiJc2IL7vFkzzgk@cluster0.ls7l2eq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
 const userRoute = require('./routes/user')
 const mongoose = require('mongoose')
